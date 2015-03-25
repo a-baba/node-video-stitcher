@@ -1,0 +1,31 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 960 540" style="cursor: pointer;">
+    <rect x="0" y="0" width="960" height="540" fill-opacity="1" fill="#000" style="cursor: pointer;"></rect>
+    <image x="0" y="0" width="100%" height="100%" opacity="1" xlink:href="/server/assets/audi/images/1.png" style="cursor: pointer;">
+        <animate attributeType="XML" attributeName="opacity" from="0" to="1" dur="1s" ease="sineInOut" begin="0ms"></animate>
+        <animate attributeType="XML" attributeName="opacity" from="1" to="0" dur="1s" ease="sineInOut" begin="4000ms"></animate>
+    </image>
+    <text x="220" y="75" fill="#fff" font-family="Audi Type Normal" font-weight="light" font-size="35" fill-opacity="1" text-anchor="middle" style="cursor: pointer;">
+        <animate attributeType="XML" attributeName="fill-opacity" from="0" to="1" dur="1s" ease="sineInOut" begin="0ms"></animate>
+        <animate attributeType="XML" attributeName="fill-opacity" from="1" to="0" dur="500ms" ease="sineInOut" begin="4500ms"></animate>
+        {{CustomerName}}
+
+
+    </text>
+    <text x="223" y="258" fill="#fff" font-family="Audi Type Normal" font-weight="light" fill-opacity="1" text-anchor="middle" font-size="25" style="cursor: pointer;">
+        <animate attributeType="XML" attributeName="fill-opacity" from="0" to="1" dur="1000ms" ease="sineInOut" begin="0ms"></animate>
+        <animate attributeType="XML" attributeName="fill-opacity" from="1" to="0" dur="500ms" ease="sineInOut" begin="4500ms"></animate>
+        {{DealerName}}
+
+
+    </text>
+    <text y="395" fill="#fff" font-family="Audi Type Normal" font-weight="light" fill-opacity="1" text-anchor="middle" style="cursor: pointer;" x="0">
+        <animate attributeType="XML" attributeName="fill-opacity" from="0" to="1" dur="1000ms" ease="sineInOut" begin="0ms"></animate>
+        <animate attributeType="XML" attributeName="fill-opacity" from="1" to="0" dur="500ms" ease="sineInOut" begin="4500ms"></animate>
+        <tspan x="220" dy="0" font-size="18" style="cursor: pointer;" dx="1">{{DealerAddress1}}</tspan>
+        <tspan x="220" dy="1.15em" font-size="18" style="cursor: pointer;" dx="0">{{DealerAddress2}}</tspan>
+        <tspan x="220" dy="1.15em" font-size="18" style="cursor: pointer;" dx="0">{{DealerPhone}}</tspan>
+        <tspan x="220" dy="1.15em" font-size="18" style="cursor: pointer;" dx="0">{{DealerCity}}, {{DealerState}} {{DealerZip}}</tspan>
+    </text>
+</svg>

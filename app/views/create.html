@@ -1,0 +1,20 @@
+<h3>Create Video(s)</h3>
+<style>
+
+</style>
+<hr>
+<div class="row">
+    <div class="col-lg-6">
+        <p>Accepts array of objects, not just an object. <a href="http://devnginx01.thefactery.com:3000/server/assets/audi/test.json" target="_blank">example</a></p>
+        <div class="form-group">
+            <label class="control-label">JSON</label>
+            <textarea class="form-control" ng-model="data" style="min-height:400px;"></textarea>
+        </div>
+        <hr/>
+        <a class="btn btn-success" ng-click="request()">Create</a>
+
+    </div>
+    <div class="col-lg-6 form-group">
+       {{response}}
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "Stitcher",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "mentierd <dayne.mentier@gmail.com>"
+  ],
+  "description": "Live Video Streaming Service",
+  "keywords": [
+    "angularjs",
+    "videojs",
+    "angular-ui-router",
+    "angular-touch",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/js/vendor",
+    "test",
+    "tests"
+  ]
+}

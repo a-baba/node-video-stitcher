@@ -1,0 +1,38 @@
+<h3>Videos</h3>
+<hr/>
+<div class="col-lg-12 col-md-12">
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <h5>HLS Streaming</h5>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h5>FLV Streaming</h5>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h5>MP4 Streaming</h5>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h5>WEBM Streaming</h5>
+                </div>
+            </div>
+            <div class="row" ng-repeat="video in videos">
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="#/stream/hls/{{video.videoId}}" style="float:left;" ng-right-click="remove($index)">{{video.videoId}}</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="#/stream/flv/{{video.videoId}}" style="float:left;" ng-right-click="remove($index)">{{video.videoId}}</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="#/stream/mp4/{{video.videoId}}" style="float:left;" ng-right-click="remove($index)">{{video.videoId}}</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="#/stream/webm/{{video.videoId}}" style="float:left;" ng-right-click="remove($index)">{{video.videoId}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

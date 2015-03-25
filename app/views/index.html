@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Stitcher
+                <!--<img src="https://cdn4.iconfinder.com/data/icons/sewing-pack/512/16-512.png" style="max-height:25px;"/>-->
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="#/"><a href="#/">Home</a></li>
+                <li ui-sref-active="#/templates"><a href="#/videos/audi">Videos</a></li>
+                <li ui-sref-active="#/test"><a href="#/create">Create</a></li>
+                <!--<li ui-sref-active="#/templates"><a href="#/stream">Stream</a></li>-->
+                <li ui-sref-active="#/services"><a href="#/services">API Docs</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container page .ng-fade" ui-view="page" style="padding-top:5em;padding-bottom:5em;"></div>

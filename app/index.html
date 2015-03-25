@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stitcher</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="/app/bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/app/css/video.css">
+        <link rel="stylesheet" href="/app/css/skin.css">
+        <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+    </head>
+    <body>
+        <div ui-view></div>
+    </body>
+
+    <!--[if lte IE 8]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js"></script>
+    <script>
+        document.createElement('ng-include');document.createElement('ng-pluralize');document.createElement('ng-view');
+        document.createElement('ng:include');document.createElement('ng:pluralize');document.createElement('ng:view');
+        document.createElement('video');document.createElement('audio');document.createElement('track');
+    </script>
+    <![endif]-->
+    <script src="/app/libs/videojs/video.js"></script>
+    <!--<script src="https://raw.githubusercontent.com/videojs/videojs-contrib-media-sources/master/src/videojs-media-sources.js"></script>-->
+    <script src="/app/libs/spin.js"></script>
+    <script src="/app/bower_components/requirejs/require.js" data-main="/app/index.js"></script>
+</html>
